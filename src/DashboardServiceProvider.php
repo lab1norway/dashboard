@@ -68,7 +68,7 @@ class DashboardServiceProvider extends ServiceProvider
 
         // Publishing the views.
         $this->publishes([
-            __DIR__.'/../resources/views' => resource_path('resources/views/vendor/dashboard'),
+            __DIR__.'/../resources/views' => resource_path('views/vendor/dashboard'),
         ]);
 
         // Publishing assets.
