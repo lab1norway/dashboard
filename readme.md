@@ -9,7 +9,19 @@ A dashboard for your application using TailwindCSS. The package include Registra
 
 ## Installation
 
+
+
 Via Composer
+
+Add the repository information to your composer.json
+
+``` json
+"repositories": [
+        { "name": "buildup/dashboard", "type": "vcs", "url": "git@github.com:lab1norway/dashboard.git" }
+    ]
+```
+
+Then run
 
 ``` bash
 $ composer require buildup/dashboard
