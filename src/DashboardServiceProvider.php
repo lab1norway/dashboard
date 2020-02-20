@@ -16,7 +16,7 @@ class DashboardServiceProvider extends ServiceProvider
         $this->loadTranslationsFrom(realpath(__DIR__.'/../resources/lang'), 'dashboard');
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'dashboard');
         // $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
-        
+
         $this->app['router']->namespace('BuildUp\\Dashboard\\Controllers')
                 ->middleware(['web'])
                 ->group(function () {
@@ -53,7 +53,7 @@ class DashboardServiceProvider extends ServiceProvider
     {
         return ['dashboard'];
     }
-    
+
     /**
      * Console-specific booting.
      *
@@ -67,9 +67,9 @@ class DashboardServiceProvider extends ServiceProvider
         ], 'dashboard.config'); */
 
         // Publishing the views.
-       /*  $this->publishes([
-            __DIR__.'/../resources/views' => base_path('resources/views/vendor/buildup'),
-        ], 'dashboard.views'); */
+        $this->publishes([
+            __DIR__.'/../resources/views' => resource_path('resources/views/vendor/dashboard'),
+        ]);
 
         // Publishing assets.
         /*$this->publishes([
@@ -79,7 +79,7 @@ class DashboardServiceProvider extends ServiceProvider
         // Publishing the translation files.
         $this->publishes([
             __DIR__.'/../resources/lang' => resource_path('lang/vendor/dashboard'),
-        ], 'dashboard.views');
+        ]);
 
         // Registering package commands.
         // $this->commands([]);
