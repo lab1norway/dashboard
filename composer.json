@@ -37,16 +37,5 @@
                 "Dashboard": "BuildUp\\Dashboard\\Facades\\Dashboard"
             }
         }
-    },
-    "scripts": {
-        "post-install-cmd": [
-              "php artisan vendor:publish --tag=dashboard-public --force",
-              "php artisan vendor:publish --tag=dashboard-views --force",
-              "php artisan vendor:publish --tag=dashboard-lang --force"
-        ],
-        "post-update-cmd": [
-            "php artisan vendor:publish --tag=dashboard-public --force",
-            "php artisan vendor:publish --tag=dashboard-lang --force"
-        ]
     }
 }

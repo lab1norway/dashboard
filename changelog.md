@@ -19,5 +19,11 @@ All notable changes to `Dashboard` will be documented in this file.
 - Spanish translation for validation/success on auth
 
 ## [0.0.1] - 2020-02-14
+### Added
 - Auth UI translations
 - Norwegian translation files for auth, validation, password and pagination 
+
+## [0.0.1] - 2020-02-26
+### Added
+- TailwindCSS via webpack
+- Post installation/update scripts
