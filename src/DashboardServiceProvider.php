@@ -72,9 +72,9 @@ class DashboardServiceProvider extends ServiceProvider
         ]);
 
         // Publishing assetsga.
-        /*$this->publishes([
-            __DIR__.'/../resources/assets' => public_path('vendor/buildup'),
-        ], 'dashboard.views');*/
+        $this->publishes([
+            __DIR__.'/../public' => public_path('vendor/dashboard'),
+        ]);
 
         // Publishing the translation files.
         $this->publishes([
