@@ -2,13 +2,11 @@
     "name": "buildup/dashboard",
     "description": "A dashboard for your application using TailwindCSS",
     "license": "license",
-    "authors": [
-        {
-            "name": "Jaime Castrillo",
-            "email": "jc@lab1.no",
-            "homepage": "https://www.lab1.no"
-        }
-    ],
+    "authors": [{
+        "name": "Jaime Castrillo",
+        "email": "jc@lab1.no",
+        "homepage": "https://www.lab1.no"
+    }],
     "homepage": "https://github.com/buildup/dashboard",
     "keywords": ["Laravel", "Dashboard"],
     "require": {
@@ -39,5 +37,16 @@
                 "Dashboard": "BuildUp\\Dashboard\\Facades\\Dashboard"
             }
         }
+    },
+    "scripts": {
+        "post-install-cmd": [
+              "php artisan vendor:publish --tag=dashboard-public --force",
+              "php artisan vendor:publish --tag=dashboard-views --force",
+              "php artisan vendor:publish --tag=dashboard-lang --force"
+        ],
+        "post-update-cmd": [
+            "php artisan vendor:publish --tag=dashboard-public --force",
+            "php artisan vendor:publish --tag=dashboard-lang --force"
+        ]
     }
 }
