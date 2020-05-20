@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'registration' => false,
+    'registration' => true,
 ];
