@@ -62,9 +62,9 @@ class DashboardServiceProvider extends ServiceProvider
     protected function bootForConsole()
     {
         // Publishing the configuration file.
-       /*  $this->publishes([
+        $this->publishes([
             __DIR__.'/../config/dashboard.php' => config_path('dashboard.php'),
-        ], 'dashboard.config'); */
+        ], 'dashboard-config');
 
         // Publishing the views.
         $this->publishes([

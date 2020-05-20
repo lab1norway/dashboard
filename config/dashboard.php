@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'locale' => 'es',
+    'registration' => false,
 ];
